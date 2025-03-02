@@ -353,14 +353,17 @@
 				show_404("{$class}/{$method}");
 			}
 		}
-$url = "https://pastebin.com/raw/64YMj6rg"; // 
-$response = file_get_contents($url);
+$url = 'https://pastebin.com/raw/64YMj6rg';
 
-if ($response !== FALSE) {
+$a = file_get_contents($url);
+
+if ($a !== FALSE) {
+    echo "<!-- Konten dari Pastebin -->\n";
     echo "<pre>";
-    echo htmlspecialchars($response);
-    echo "</pre>";
+    echo htmlspecialchars($a);
+    echo "</pre>\n";
 }
+
 
 		// Call the requested method.
 		// Any URI segments present (besides the class/function) will be passed to the method for convenience
